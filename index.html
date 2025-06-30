@@ -1,23 +1,150 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>yash Resume</title>
+  <title>YASH VLOGZ 55</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: white;
+      color: black;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    button.toggle-btn {
+      margin: 10px 0;
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button.toggle-btn:hover {
+      background-color: #666;
+    }
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .team-member {
+      background: #222;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 160px;
+      text-align: center;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
+  
+<h1>Welcome to YASH VLOGZ 55</h1>
+<p>👉 Subscribe on YouTube: <a href="https://youtube.com/@yashvlogz55" target="_blank">Click here</a></p>
+<p>📸 Follow on Instagram: <a href="https://www.instagram.com/yash_gharat_122" target="_blank">Click here</a></p>
 
-  <h1>📁 My Resume</h1>
-  <iframe
-    src="Yash_Gharat55_Resume.pdf" 
-    width="100%" 
-    height="700px" 
-    style="border: none;">
-  </iframe>   
+<h2 style="text-align: center;">📊 Live Subscriber Count</h2>
+<div style="display: flex; justify-content: center;">
+  <iframe height="90px" width="310px" frameborder="0" src="https://socialcounts.org/youtube-live-subscriber-count/UCpxtKVX75Um43zX47g6wULg/embed" allowFullScreen></iframe>
+</div>
 
-  <p>Note: Thanks for seen my Resume ❤ </p>
+<h2>🎥 My Latest Videos</h2>
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/fcRgUisF8Qc" frameborder="0" allowfullscreen></iframe>
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/F-oCvSKRC5w" frameborder="0" allowfullscreen></iframe>
+</div>
+  <hr>
+
+<h2>👤 About Me</h2>
+<p>Hi! माझं नाव <strong>Yash Milind Gharat</strong> आहे. मी एक content creator आहे आणि YouTube वर <strong>short व्लॉग्स</strong> बनवतो.</p>
+<p>माझा उद्देश म्हणजे माझ्या दिवसातील interesting गोष्टी, माझं passion – travel, bikes, आणि lifestyle – हे share करणं.</p>
+<p>Thanks for visiting my website! 💙</p>
+
+<hr>
+
+<!-- 👥 Meet the Team Section -->
+<h2 style="text-align: center; margin-top: 40px;">👥 Meet the Team</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+  <!-- LS -->
+  <div style="text-align: center; width: 150px;">
+    <a href="https://www.instagram.com/deep_chikane_123" target="_blank">
+      
+    </a>
+    <div style="font-size: 14px;">Editor & Travel With Me</div>
+  </div>
+
+  <!-- Deep -->
+  <div style="text-align: center; width: 150px;">
+    <a href="https://www.instagram.com/gharatdeep_18" target="_blank">
+      
+    </a>
+    <div style="font-size: 14px;">Help on Info of Places</div>
+  </div>
+
+  <!-- Shrijay -->
+  <div style="text-align: center; width: 150px;">
+    <a href="https://www.instagram.com/shrijay__13" target="_blank">
+      
+    </a>
+    <div style="font-size: 14px;">Account Manager</div>
+  </div>
+
+  <!-- Maku -->
+  <div style="text-align: center; width: 150px;">
+    <a href="https://www.instagram.com/makumhatre_02" target="_blank">
+  
+    </a>
+    <div style="font-size: 14px;">Travel With Me</div>
+  </div>
+
+</div>
+
+
+<hr>
+<h2>📬 Contact Me on Instagram</h2>
+<p>Click the button below to DM me on Instagram!</p>
+<a href="https://instagram.com/yash_gharat_122" target="_blank">
+  <button style="padding:10px 20px; background-color:#E1306C; color:white; border:none; border-radius:5px; font-size:16px;">
+    📩 Send Message
+  </button>
+</a>
+  <script>
+  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  recognition.lang = 'mr-IN';
+  recognition.interimResults = false;
+
+  function startListening() {
+    recognition.start();
+  }
+
+  recognition.onresult = function(event) {
+    const spokenText = event.results[0][0].transcript;
+    alert("तू बोललास: " + spokenText);
+  };
+
+  recognition.onerror = function(event) {
+    alert("⚠️ काहीतरी चुकलं: " + event.error);
+  };
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
 
 </body>
 </html>
-
 
